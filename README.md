@@ -53,10 +53,12 @@ curl -X POST "http://localhost:5000/ask" \
 
 ---
 
-## Running an LLM
+## Running the LLM
 
-Please use Ollama [https://ollama.com/] to host your LLM. For fairness, please use either of the following models: `llama3.2:3b`, `llama3.2:1b`. These models are small and should be able to run on a laptop CPU. 
+Please use Ollama [https://ollama.com/] to host your LLM. For fairness, use either of the following models: `llama3.2:3b`, `llama3.2:1b`. These models are small and should be able to run on a laptop CPU. We will use ollama to evaluate your agent so you can assume Ollama is already running on the user's `http://localhost:11434`.
 
 ## Evaluation
 
-This project is intentionally open ended. You are free to use whatever strategies you can come up with to generate the best responses possible! Please explain your strategy in a README.md, and feel free to write about other things you tried. Your submission will be assessed by the quality of your agent's responses as well as the writeup of your strategy.
+This project is intentionally open ended. You are free to use whatever strategies you can come up with to generate the best responses possible! Please explain your strategy in a README.md, and feel free to write about other things you may have tried. Your submission will be assessed by the quality of your agent's responses as well as the writeup of your strategy.
+
+You may include example questions and responses from your agent in your writeup to showcase some good examples.
