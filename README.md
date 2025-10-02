@@ -62,3 +62,14 @@ Please use Ollama [https://ollama.com/] to host your LLM. For fairness, use eith
 This project is intentionally open ended. You are free to use whatever strategies you can come up with to generate the best responses possible! Please explain your strategy in a README.md, and feel free to write about other things you may have tried or challenges you ran into. Your submission will be assessed by the quality of your agent's responses as well as the writeup of your strategy.
 
 You may include example questions and responses from your agent in your writeup to showcase some examples you are particularly proud of.
+
+## Submission
+
+Please make a new **private** github repo (not a fork, as a private fork of a public repo is not allowed) and push your code to the new repo.  Then, invite the github user `elv-careers` as a read-only private collaborator on your repo.
+
+#### (push instructions)
+
+After you make the repo, these commands should result in pushing to the new repo (for github user with id "github_user", assuming you use ssh authentication):
+
+    git remote set-origin main git@github.com:github_user/rag-challenge
+    git push origin main
