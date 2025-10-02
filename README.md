@@ -1,40 +1,38 @@
-# Eluvio Q/A RAG Agent Challenge
+# Eluvio Q/A RAG Challenge
 
-Your task is to implement a RAG agent which answers questions about Eluvio! You will build a small system that can answer questions about [Eluvio](https://eluv.io/) by scraping publicly available information, indexing it locally, and exposing a lightweight API for querying.
+Your task is to implement a lightweight RAG agent which answers questions about Eluvio! You will scrape publicly available information (our homepage for example https://eluv.io/), index it locally, and expose your agent through a local API.
 
 ---
 
-## Project Flow
+## Project Flow  
 
-The system should follow this flow:  
-
-*Note*: you may use any language of your choice, but examples and starter code are provided in python. 
+**Note**: you may use any language of your choice, but the provided examples and starter code use python. 
 
 1. **Scrape + Index**  
    - Write an `index.py` script which scrapes or downloads reference data from Eluvio’s public site (https://eluv.io/) and/or other publicly available sources.  
-   - Build a local searchable index of that data. You may use a search library of your choice. 
+   - The script should also build a local searchable index of that data. You may use any search library of your choice. 
    - Save the index to disk so it can be reused when serving requests.
-   - Please upload both the index itself as well as creation script to the repository. 
+   - Please upload both the index itself as well as the creation script to your github repository.
 
 2. **Run a Local Server**  
-   - Implement a `server.py` which loads the index and exposes an HTTP API over `http://localhost:5000`.  
-   - The API should accept a question from the user and return an answer generated with the help of your index + a language model.
-   - We have provided starter code for running an API via Flask.
+   - Create a `server.py` which exposes an HTTP API for users to query over `http://localhost:5000`.
+   - We have provided starter code for running an API via Flask. You may use this to save time so you can focus on your agent!
+   - The API should accept a question from the user and return an answer generated with the help of your index + language model.
 
 3. **Ask Questions**  
-   - Once the server is running, users can POST a question to the `/ask` endpoint and receive a JSON response. 
+   - Once the server is running, users can POST a question to the `/ask` endpoint and receive a JSON response.
 
 ---
 
 ## Example User Flow
 
-Please follow the flow below as closely as possible.
+Please implement the flow below as closely as possible.
 
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Build the index
+# 2. Scrape data and build the local index
 python index.py
 
 # 3. Start the server
@@ -59,6 +57,6 @@ Please use Ollama [https://ollama.com/] to host your LLM. For fairness, use eith
 
 ## Evaluation
 
-This project is intentionally open ended. You are free to use whatever strategies you can come up with to generate the best responses possible! Please explain your strategy in a README.md, and feel free to write about other things you may have tried. Your submission will be assessed by the quality of your agent's responses as well as the writeup of your strategy.
+This project is intentionally open ended. You are free to use whatever strategies you can come up with to generate the best responses possible! Please explain your strategy in a README.md, and feel free to write about other things you may have tried or challenges you ran into. Your submission will be assessed by the quality of your agent's responses as well as the writeup of your strategy.
 
-You may include example questions and responses from your agent in your writeup to showcase some good examples.
+You may include example questions and responses from your agent in your writeup to showcase some examples you are particularly proud of.
