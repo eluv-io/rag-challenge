@@ -1,6 +1,8 @@
 # Eluvio Q/A RAG Challenge
 
-Your task is to implement a lightweight RAG agent which answers questions about Eluvio! You will scrape publicly available information (our homepage for example https://eluv.io/), index it locally, and expose your agent through a local API.
+Your task is to implement a lightweight RAG agent which answers questions about Eluvio! For more information about RAG (retrieval augmented generation), check out this example: https://huggingface.co/blog/ngxson/make-your-own-rag. 
+
+You will scrape publicly available information (our homepage for example https://eluv.io/), index it locally, and expose your agent through a local API.
 
 ---
 
