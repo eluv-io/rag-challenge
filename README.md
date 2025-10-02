@@ -71,5 +71,5 @@ Please make a new **private** github repo (not a fork, as a private fork of a pu
 
 After you make the repo, these commands should result in pushing to the new repo (for github user with id "github_user", assuming you use ssh authentication):
 
-    git remote set-origin main git@github.com:github_user/rag-challenge
+    git remote set-url origin git@github.com:github_user/rag-challenge
     git push origin main
